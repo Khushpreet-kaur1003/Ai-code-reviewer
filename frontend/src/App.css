@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex: 1;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: rgb(66, 65, 69);
+  position: relative;
+}
+
+main .right {
+  background-color: #0f1829d9;
+  padding: 1.5rem 2rem;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: pre-wrap;   /* allow wrapping */
+  word-wrap: break-word;   /* break long words */
+  overflow-wrap: break-word;
+  line-height: 1;        /* better line spacing */
+  font-size: 1rem;         /* balanced font size */
+  color: #e6edf3;          /* softer white text */
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+main .right h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  color: #9cdcfe;
+}
+
+main .right p {
+  margin: 0.5rem 0;
+}
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #000104;
+  font-family: "Fira Code", monospace;
+  padding: 1rem;
+  overflow: auto;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(194, 194, 218);
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  white-space: pre-wrap;      /* line breaks + wrapping */
+  word-wrap: break-word;      /* break long words */
+  overflow-wrap: break-word;  /* modern support */
+  max-width: 90%;  
+}
+
+/* .code pre code {
+  font-size: 0.95rem;       /* slightly smaller font for code */
+  /* line-height: 1;         better readability */
+  /* background-color: #0d1117; /* nicer dark background */
+  /* color: #e6edf3;           softer white text */
+  /* border-radius: 0.5rem; */
+  /* padding: 1rem 1.2rem; */
+  /* overflow-x: auto;         horizontal scroll if code too long */
+  /* font-family: "Fira Code", monospace; */
+  /* font-weight: 400; */
+/* } *
+
+/* Style for explanation text */
+/* .explanation { */
+  /* font-size: 1rem; */
+  /* line-height: 1; */
+  /* color: #d1d5db; light gray for explanation text */
+  /* margin-top: 1rem; */
+/* } */ 
